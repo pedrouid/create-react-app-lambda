@@ -1,5 +1,5 @@
 {
-  "name": "react-lambda",
+  "name": "test-lambda",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,7 +11,8 @@
   },
   "scripts": {
     "start": "concurrently \"react-scripts start\" \"netlify-lambda serve src/lambda\"",
-    "build": "react-scripts build && netlify-lambda build src/lambda",
+    "build": "react-scripts build",
+    "build:lambda": "netlify-lambda build src/lambda",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
